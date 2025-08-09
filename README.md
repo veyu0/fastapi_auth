@@ -60,11 +60,15 @@ docker-compose up --build
 - POST /auth/register
 
 Описание: Регистрация нового пользователя.
+
 Тело запроса: { "username": "string", "password": "string" }
+
 Ответ: { "username": "string" }
 
 - POST /auth/login
 
 Описание: Аутентификация пользователя. Генерирует JWT-токен внутренне, но возвращает сообщение об успехе.
+
 Тело запроса: username=string&password=string (форм-данные)
+
 Ответ: {"msg": "Успешный вход"}
